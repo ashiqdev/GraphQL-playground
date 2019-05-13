@@ -1,0 +1,16 @@
+type Query {
+	courses: [Course!]!
+	course(id: ID!): Course!
+}
+
+type Mutation {
+	createCourse(title: String!, author: String!): Course!
+	updateCourse(id: ID!, title: String!, author: String!): Course
+	deleteCourse(id: ID!): Course
+}
+
+type Course {
+	id: ID!
+	title: String!
+	author: String!
+}

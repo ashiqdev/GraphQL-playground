@@ -1,0 +1,6 @@
+type Course {
+	id: ID! @id
+	createdAt: DateTime! @createdAt
+	title: String!
+	author: String!
+}
